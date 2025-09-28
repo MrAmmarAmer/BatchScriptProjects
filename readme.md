@@ -30,31 +30,22 @@ BatchScriptProjects/
 ```
 
 * Each file is self-contained and well-commented for easy understanding.
-* Each file contains the main script in a batch. Some others include the `single-command.bat` file, which contains the same idea as the script but is slightly different. To run as a single command. **It is useful when used as a clickable shortcut**.
+* Each file contains the main script in a batch. Some others include the `single-command.bat` file, which contains the same script, but is slightly different. To run as a single command.
 
-* example: 
+** 📌 It is useful when used as a clickable shortcut**.
 
+* Example:
+1. Create a shortcut anywhere on your computer
+2. Add the following script as the target of the shortcut. 
+	```batch
+		cmd.exe /v:on /c "set /p t=Enter minutes to shutdown (Enter=now, x=cancel): & if /i "!t!"=="x" (shutdown /a) else if "!t!"=="" (shutdown /s /t 0) else (set /a s=!t!*60 >nul & shutdown /f /s /t !s!)" & pause
+	```
+	source: `BatchScriptProjects/Shutdown-Timer/single-command.bat`
 
-```batch
-:: From BatchScriptProjects/Shutdown-Timer/single-command.bat
-	
-	cmd.exe /v:on /c "set /p t=Enter minutes to shutdown (Enter=now, x=cancel): & if /i "!t!"=="x" (shutdown /a) else if "!t!"=="" (shutdown /s /t 0) else (set /a s=!t!*60 >nul & shutdown /f /s /t !s!)" & pause
-```
+3. [optional] Download & Add the `BatchScriptProjects/Shutdown-Timer/poweroff.ico` as the custom icon of the shortcut.
+4. [In some projects, it is required] Go to the properties of the  shortcut >> Advanced >> Run as Administrator >> Ok >> Ok
+5. Use it by clicking it; now you have a shutdown timer program.
 
-
-
-
-
-
----
-
-## 🚀 Getting Started
-
-1. **Clone this repository**
-
-```bash
-git clone https://github.com/MrAmmarAmer/BatchScriptProjects/
-```
 
 
 ---
