@@ -9,8 +9,10 @@ Title Shutdown
 		
 :main
 	Setlocal EnableDelayedExpansion
+		
 		:: Display a prompt to get the input from users
 		set /p input=Enter minutes to shutdown (Enter=now, x=cancel): 
+		
 		:: This is a method to check if the value is a number
 		set /a isNumeric=!input! >nul 2>&1
 		
@@ -31,9 +33,10 @@ Title Shutdown
 			shutdown /f /s /t !sec!
 			
 		) else (
-			echo. & echo You entered an invalid value! Enter the number of minutes..  & echo.
+			echo. 
+			echo Invalid value! Enter a numeric value of minutes..
+			echo.
 			Goto main
-
 		)
 
 	Endlocal
