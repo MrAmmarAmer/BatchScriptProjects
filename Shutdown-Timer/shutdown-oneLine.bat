@@ -1,1 +1,1 @@
-cmd.exe /v:on /c "set /p t=Enter minutes to shutdown (Enter=now, x=cancel): & @if /i "!t!"=="x" (shutdown /a) else if "!t!"=="" (shutdown /s /t 0) else (set /a s=!t!*60 >nul & shutdown /f /s /t !s!)" & pause
+cmd.exe /v:on /c "set /p t=Enter minutes to shutdown (Enter=now, x=cancel): & if /i "!t!"=="x" (shutdown /a) else if "!t!"=="" (shutdown /s /t 0) else (set /a s=!t!*60 >nul & shutdown /f /s /t !s!)" & pause

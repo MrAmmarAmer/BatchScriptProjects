@@ -1,0 +1,72 @@
+:: Author: github.com/MrAmmarAmer
+:: Project: github.com/MrAmmarAmer/
+@echo off
+Title Shutdown
+
+
+goto main
+
+
+:main
+	setlocal EnableDelayedExpansion
+	
+		set /p v=Enter minutes to shutdown (Enter=now, x=cancel): 
+		
+		:: Case empty value -> Shutdown Now
+		IF "!v!"=="" (
+		  echo Shutting down now...
+			@rem :: shutdown /s /t 0
+			@rem :: goto done 
+		)
+		:: Case x or X value -> Cancel any scheduling for the shutdown
+		IF /i "!v!"=="x" (
+			echo Cancelling scheduled shutdown...
+			:: shutdown /a
+			:: goto done
+		)
+		:: Verifiy that the value is a numeric value
+		set /a test=!v! >nul 2>&1		
+		IF errorlevel 1 (
+			echo You entered an invalid value. Enter the number of minutes
+		  :: pause
+			:: goto done
+		)
+		:: Case numeric value -> Scheduling a shutdown task
+		echo Successfully scheduled shutdown...
+		set /a s=!v!*60		
+		:: shutdown /f /s /t !s!
+		
+endlocal
+goto done
+
+
+:done
+	pause
+	exit /b
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	:::::::::::::::::::::::::::::::
+	:main
+	setlocal EnableDelayedExpansion
+		set /p "input=Enter minutes to shutdown (Enter=now, x=cancel): "
+		IF "!input!"=="" (
+			echo Empty
+		) Else if /i "!input!" == "X" (
+			echo x
+		) else (
+			echo "!input!"
+		)		
+	GOTO :eof
+endlocal
