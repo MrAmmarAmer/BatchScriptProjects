@@ -32,7 +32,7 @@ BatchScriptProjects/
 * Each file is self-contained and well-commented for easy understanding.
 * Each file contains the main script in a batch. Some others include the `single-command.bat` file, which contains the same script, but is slightly different. To run as a single command.
 
-** 📌 It is useful when used as a clickable shortcut**.
+**📌 It is useful when used as a clickable shortcut**.
 
 * Example:
 1. Create a shortcut anywhere on your computer
