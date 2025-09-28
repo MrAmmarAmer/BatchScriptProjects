@@ -13,7 +13,7 @@ Title Shutdown
 		:: Display a prompt to get the input from users
 		set /p input=Enter minutes to shutdown (Enter=now, x=cancel): 
 		:: This is a method to check if the value is a number
-		set /a isNumeric=!input! >nul 2>null
+		set /a isNumeric=!input! >nul 2>&1
 		
 		:: empty case, will shutdown now
 		 IF "!input!"=="" (
@@ -31,7 +31,7 @@ Title Shutdown
 			set /a sec=!input!*60
 			shutdown /f /s /t !sec!
 			
-		)  else (
+		) else (
 			echo. & echo You entered an invalid value! Enter the number of minutes..  & echo.
 			Goto main
 
