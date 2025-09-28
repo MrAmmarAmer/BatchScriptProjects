@@ -25,7 +25,7 @@ I regularly update this repository with **new projects**, so consider starring �
 ```
 BatchScriptProjects/
 │
-├── Shutdown-Timer/		# Example project with short description
+├── Shutdown-Timer/		# Simple and useful app/program, shuts down your computer after several minutes
 │  │
 │  ├──	script.bat					# includes the main batch script 
 │  ├──  single-command.bat	# includes compressed script to use it as one single command				
@@ -49,7 +49,7 @@ BatchScriptProjects/
 
 3. [optional] Download & Add the `BatchScriptProjects/Shutdown-Timer/custom-icon.ico` as the custom icon of the shortcut.
 4. [In some projects, it is required] Go to the properties of the  shortcut >> Advanced >> Run as Administrator >> Ok >> Ok
-5. Use it by clicking it; now you have a simple and usefull shutdown timer program.
+5. Use it by clicking it; now you have a simple and useful shutdown timer program.
 
 ---
 
