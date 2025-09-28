@@ -25,7 +25,7 @@ I regularly update this repository with **new projects**, so consider starring �
 ```
 BatchScriptProjects/
 │
-├── Shutdown-Timer/		# Simple and useful app/program, shuts down your computer after several minutes
+├── Shutdown-Timer/		# A simple and useful app/program, shuts down your computer after several minutes
 │  │
 │  ├──	script.bat					# includes the main batch script 
 │  ├──  single-command.bat	# includes compressed script to use it as one single command				
