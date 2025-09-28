@@ -1,9 +1,8 @@
-
 :: Author: github.com/MrAmmarAmer
-:: Project: github.com/MrAmmarAmer/
+:: Project: github.com/MrAmmarAmer/BatchScriptProjects/Shutdown-Timer
 
-:: [Warning]: In some cases, the shutdown command doesn't work because of permissions.
-::  					To solve that, run as administrator.
+:: [Warning]: In some cases, this script couldn't run as expected because the shutdown command needs permissions.
+::  					To solve that, run this file in administrator mode.
 
 @echo off
 Title Shutdown
