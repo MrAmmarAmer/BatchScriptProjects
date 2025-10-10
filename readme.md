@@ -9,7 +9,6 @@
 A collection of useful **Batch Script projects** and mini-tools for Windows automation, productivity, and learning.
 This repository is perfect for developers, sysadmins, and enthusiasts who want to explore the power of Windows CMD scripting.
 
----
 
 ## 📚 About
 
@@ -24,7 +23,7 @@ This repository contains multiple Batch scripts that solve real-world problems, 
 I regularly update this repository with **new projects**, so consider starring ⭐ it to stay up to date.
 
 
----
+
 
 ## 📂 Repository Structure
 
@@ -57,7 +56,7 @@ BatchScriptProjects/
 4. [In some projects, it is required] Go to the properties of the  shortcut >> Advanced >> Run as Administrator >> Ok >> Ok
 5. Use it by clicking it; now you have a simple and useful shutdown timer program.
 
----
+
 
 ## 🧠 Example Projects
 
@@ -69,7 +68,7 @@ Here are some examples of what's included:
 * ✅ **File Hider** – Combine image + file using `copy /b` trick
 * ✅ **User Prompt Scripts** – Interactive scripts with input validation
 
----
+
 
 ## 💡 Why This Repo?
 
@@ -77,14 +76,14 @@ Here are some examples of what's included:
 * Useful for **automation lovers** who want quick solutions
 * A growing collection with **practical use cases**
 
----
+
 
 ## 🛠️ Requirements
 
 * Windows 7/10/11
 * Command Prompt (`cmd.exe`)
 
----
+
 
 ## 📜 License
 
