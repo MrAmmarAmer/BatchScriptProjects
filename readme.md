@@ -2,9 +2,9 @@
 
 <p align="center">
 <img src="https://img.shields.io/badge/Batch_File-Makes_Fun-4caf50?logo=Github" alt="Batch File">
-<a href="https://www.youtube.com/@EBTools">
+<!-- <a href="https://www.youtube.com/@EBTools">
 	<img src="https://img.shields.io/badge/EBTools-120k_Follow-red?style=social&logo=youtube" alt="EBTools Youtube Channel">
-</a><br>
+</a><br> -->
 </p>
 A collection of useful **Batch Script projects** and mini-tools for Windows automation, productivity, and learning.
 This repository is perfect for developers, sysadmins, and enthusiasts who want to explore the power of Windows CMD scripting.
